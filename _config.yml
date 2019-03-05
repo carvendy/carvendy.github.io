@@ -1,15 +1,1 @@
-# Created by Jekyll Writer
-title: My name is Carvendy
-author: Carvendy
-description: >
-  This theme is disigned based on Mailbox Blog, and licensed under MIT. This
-  theme is also default theme for new site created by Jekyll Writer.
-permalink: '/:year/:month/:day/:title/'
-paginate: 6
-paginate_path: '/page/:num/'
-github_username: carvendy
-gems:
-  - jekyll-paginate
-markdown: kramdown
-baseurl: ''
 theme: jekyll-theme-cayman
