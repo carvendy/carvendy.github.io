@@ -7,8 +7,7 @@ description: >
 permalink: '/:year/:month/:day/:title/'
 paginate: 6
 paginate_path: '/page/:num/'
-twitter_username: jekyllwriter
-github_username: jekyllwriter
+github_username: carvendy
 gems:
   - jekyll-paginate
 markdown: kramdown
