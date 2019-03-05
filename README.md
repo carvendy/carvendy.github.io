@@ -5,7 +5,7 @@
 
 
 ## 经历
-> &emsp;&emsp;参与过[并发编程网](http://ifeve.com) 译者的工作，期间翻译过《Maven官方文档》、《Python3.6官方文档》、《Istio官方文档》
+> &emsp;&emsp;参与过[并发编程网](http://ifeve.com)译者的工作，期间翻译过《Maven官方文档》、《Python3.6官方文档》、《Istio官方文档》
 
 
 ## 我打算 
