@@ -9,7 +9,7 @@ layout: default
 
 
 ## 经历
-> &emsp;&emsp;参与过[并发编程网](http://ifeve.com) 译者的工作，期间翻译过《Maven官方文档》、《Python3.6官方文档》、《Istio官方文档》
+> &emsp;&emsp;参与过[并发编程网](http://ifeve.com?_blank) 译者的工作，期间翻译过《Maven官方文档》、《Python3.6官方文档》、《Istio官方文档》
 
 
 ### 我要做些什么？
@@ -17,5 +17,7 @@ layout: default
 从现在开始我想写点东西，记录一下自己所思考的一些东西。我希望自己可以走得远一些，长久一些。
 
 文章总字数：{{ page.content | number_of_words }}
+
+
 
 

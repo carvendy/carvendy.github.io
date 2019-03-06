@@ -18,6 +18,8 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"/>
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
@@ -30,6 +32,7 @@
     <main id="content" class="main-content" role="main">
       {{ content }}
 
+      <div id="comments"></div>
       <footer class="site-footer">
         {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
@@ -38,4 +41,42 @@
       </footer>
     </main>
   </body>
+
+ <script>
+  window.onload = function(){
+    var aTagArr = [].slice.apply(document.getElementsByTagName("a"));
+
+    aTagArr.forEach(function (e, i) {
+      e.href.indexOf("_blank") > -1 ? e.target = "_blank" : null;
+    });
+  }
+ </script> 
+
+<script>
+    const myTheme = {
+    render(state, instance) {
+      const container = document.createElement('div')
+      container.lang = "en-US"
+      container.className = 'gitment-container gitment-root-container'
+      container.appendChild(instance.renderHeader(state, instance))
+      container.appendChild(instance.renderEditor(state, instance))
+      container.appendChild(instance.renderComments(state, instance))
+      container.appendChild(instance.renderFooter(state, instance))
+      return container
+    },
+  }
+
+    const gitment = new Gitment({
+      id: '', // optional
+      owner: 'carvendy',
+      repo: 'https://github.com/carvendy/communicate',
+      oauth: {
+        client_id: '18edbc252ed6f5d5790c',
+        client_secret: 'ad80600d4a939bd9b7d60c3df7616aab0fb8695d',
+      },
+    })
+    
+    gitment.render('comments')
+    </script>
+    
 </html>
