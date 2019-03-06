@@ -1,6 +1,5 @@
-title: 记录点滴
-author：Carvendy
-about: 软件工程师，数学爱好者，爱思考也爱文史哲
-tagline: 尘世间一小小书童，数学爱好者，爱思考也爱文史哲
-theme: jekyll-theme-libretto
-paginate: 5
+title: Cayman theme
+description: Cayman is a clean, responsive theme for GitHub Pages.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-cayman
