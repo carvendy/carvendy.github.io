@@ -12,7 +12,7 @@
   }
 
     var href = window.location.href;
-    href = href.replace('https://www.carvendy.com','').replace('https://carvendy.com','')
+    href = href.replace('https://www.carvendy.com','').replace('https://carvendy.com','').replace(/\?(.*)$/,'');
     const gitment = new Gitment({
       id: href,
       owner: 'carvendy',
