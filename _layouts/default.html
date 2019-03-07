@@ -66,8 +66,10 @@
     },
   }
 
+    var href = window.location.href;
+    href = href.replace('https://www.carvendy.com','').replace('https://carvendy.com','')
     const gitment = new Gitment({
-      id: 'index',
+      id: href,
       owner: 'carvendy',
       repo: 'carvendy.github.io',
       oauth: {
