@@ -1,1 +1,26 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('7 d={a(2,1){7 0=j.k(\'i\')0.g="h-o"0.p=\'6-0 6-n-0\'0.5(1.l(2,1))0.5(1.m(2,1))0.5(1.f(2,1))0.5(1.c(2,1))e 0},};B 3=C.z.3;3=3.b(\'9://A.4.8\',\'\').b(\'9://4.8\',\'\')7 6=F G({D:3,E:\'4\',y:\'4.s.t\',q:{r:\'w\',x:\'u\',},});6.a(\'v\');',43,43,'container|instance|state|href|carvendy|appendChild|gitment|const|com|https|render|replace|renderFooter|myTheme|return|renderComments|lang|en|div|document|createElement|renderHeader|renderEditor|root|US|className|oauth|client_id|github|io|ad80600d4a939bd9b7d60c3df7616aab0fb8695d|comments| 18edbc252ed6f5d5790c|client_secret|repo|location|www|var|window|id|owner|new|Gitment'.split('|'),0,{}));
+    const myTheme = {
+    render(state, instance) {
+      const container = document.createElement('div')
+      container.lang = "en-US"
+      container.className = 'gitment-container gitment-root-container'
+      container.appendChild(instance.renderHeader(state, instance))
+      container.appendChild(instance.renderEditor(state, instance))
+      container.appendChild(instance.renderComments(state, instance))
+      container.appendChild(instance.renderFooter(state, instance))
+      return container
+    },
+  }
+
+    var href = window.location.href;
+    href = href.replace('https://www.carvendy.com','').replace('https://carvendy.com','')
+    const gitment = new Gitment({
+      id: href,
+      owner: 'carvendy',
+      repo: 'carvendy.github.io',
+      oauth: {
+        client_id: '18edbc252ed6f5d5790c',
+        client_secret: 'ad80600d4a939bd9b7d60c3df7616aab0fb8695d',
+      },
+    })
+    
+    gitment.render('comments')
