@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#257878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
     <link rel="stylesheet" href="/assets/css/default.css"/>
     <!-- <link rel="stylesheet" href="/assets/css/font-g.css"/> -->
     <script src="/assets/js/gitment.browser.js"></script>
@@ -55,27 +55,52 @@ nav{
 
     <main id="content" class="main-content" role="main">
         <nav>
-          {% for item in site.data.nav %}
-            &emsp;&emsp;<a href="{{ item.link }}" {% if page.url == item.link %} style="color: red;"{% endif %}>
-              {{ item.name }}
+          
+            &emsp;&emsp;<a href="/" >
+              Home
             </a>
-          {% endfor %}
+          
+            &emsp;&emsp;<a href="/about.html" >
+              About
+            </a>
+          
         </nav>
 
-      <h1 id="article" >{{page.article}}</h1>
+      <h1 id="article" >怕与无畏</h1>
       
-      {{ content }}
+      <h2 id="引子">引子</h2>
+<blockquote>
+  <p>   有一次一个朋友和我聊到，怕。TA说，如果做了这件事情会如何，但是不做又回如何。</p>
+</blockquote>
 
-      {% if page.noCom != true %}
+<div id="music"></div>
+
+<h2 id="探讨一下">探讨一下</h2>
+<blockquote>
+  <p>   或许，你都听过“天下掉下个林妹妹”。在《红楼梦》里有个神话，黛玉本身灵河岸边的一株绛珠草，得赤霞宫神瑛侍者灌溉，才修成仙。一日神瑛侍者要下凡，绛珠仙子也要下凡去报恩。（看看原文）</p>
+  <blockquote>
+    <p>   <strong>只因西方灵河岸边。三生石畔，有绛珠草一株，时有赤霞宫神瑛侍者日以甘露灌溉。这绛珠草始得久延岁月。后因此草受天地之精华，又加雨露滋润。脱却草胎本质。修成个女儿身，只因未酬报灌溉之德，故其五内便郁结着一段缠绵不断之意。恰近日神瑛侍者凡心偶炽，意欲下凡。那绛珠仙子道：“他是甘露之惠，我并无水还他，但把我一生所有的眼泪还给他。</strong> <br />
+ </p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <p>  在这个神话里，把黛玉的“哭”讲得很哀怨但又很美。而实现里的黛玉，母亲死后她九岁入贾府，她虽然极其聪明但又太多忧愁了。她怕宝玉对她不是真心的，她怕宝钗对宝玉好，怕湘云的金麒麟的姻缘之说。。。。。。所以宝玉对黛玉说过，“<strong>你皆因总是不放心的原故，才弄了一身的病，但凡宽慰些，这病也不得一日重似一日。</strong>”</p>
+</blockquote>
+
+
+      
         <div id="comments"></div>
-      {% endif %}
+      
 
-      {% include page.html %}
+      <!-- 分页链接 -->
+
+
+
+
 
       <footer class="site-footer">
-        {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
+        
         
         <div id="htmer_time"></div>
       </footer>
@@ -90,7 +115,7 @@ nav{
       e.href.indexOf("_blank") > -1 ? e.target = "_blank" : null;
     });
 
-    var musicId = {{page.musicId}};
+    var musicId = 447076173;
     //console.log(musicId);
     // music
     var music = $("#music");
