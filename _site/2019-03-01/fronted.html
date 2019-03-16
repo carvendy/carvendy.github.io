@@ -31,10 +31,11 @@ nav{
 }
 
 .page-header h1,.page-header h2{
-  color: black;
+  color:#fff;
 }
 
-.threeD{ color:#fff; 
+.threeD{ 
+   color:#fff; 
    text-shadow: 0 0 1px #999, 
               1px 1px 2px #888, 
               2px 2px 2px #777, 
@@ -43,13 +44,30 @@ nav{
               5px 5px 2px #333;
 }
 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+
+.hello-h{
+    margin: 0 auto;
+    width: 16.5em;
+    width: 26ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(30, end),
+        cursor-blink 0.3s step-end infinite alternate;
+}
+
 </style>
 
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name threeD" >Welcome to Carvendy's Zone</h1>
+      <h1 class="project-name threeD hello-h" >Welcome to Carvendy's Zone</h1>
       <h2 >Study&emsp;&&emsp;Think&emsp;&&emsp;communicate</h2>  
     </header>
 
@@ -70,7 +88,7 @@ nav{
       
       <h2 id="引子">引子</h2>
 <blockquote>
-  <p>   最近换了工作，开始接触到了一些前端的内容，期间与看到了一些东西，慢慢有点启发所以整理一下。</p>
+  <p>   最近换了工作，开始接触到了一些前端的内容，期间与看到了一些东西，慢慢有点启发所以整理了一下。</p>
 </blockquote>
 
 <h2 id="经历">经历</h2>
@@ -79,10 +97,10 @@ nav{
 </blockquote>
 
 <blockquote>
-  <p>  我以前看前端，觉得就是分工不同，也就知道一点皮毛。年后回来，刚好换了一份新工作。在新工作中，我首先要转前端，有那么一个契机可以多了解这些东西。期间学了Vue,React,还有一些node模块，感觉到这些年前端发展也是挺快。
+  <p>  我以前看前端，觉得就是分工不同，也就知道一点皮毛。年后回来，刚好换了一份新工作。在新工作中，我首先要转前端，有那么一个契机可以多了解这些东西。期间学了Vue,React,还有一些node模块，感觉到这些年来在前端这一块发展也是很快，或许是之前没有注意这个领域吧。
  <br />
   Vue,React这类模板引擎，把后端渲染的工作接管。还有组件化的概念，也看到其中使用类和属性，在实际操作的过程中也很灵活。（Java当年鼓吹的“面向对象”，如今在其他语言也有得到应用了。）   <br />
-  我布局上学到了Flexbox布局方式，更是让我耳目一新，把文档反复看了两遍。与传统的一对比，无论是初次上手，布局中的计算，才感觉到了何为简洁简易。(庆幸的是，我在公司晨会中，也分享Flexbox布局的一些思考)</p>
+  我布局上学到了Flexbox布局方式，更是让我耳目一新，把文档反复看了两遍。与传统的一对比，无论是初次上手，布局中的计算，才感觉到了何为简洁简易。(庆幸的是，我在公司晨会中，也分享Flexbox布局的一些思考)。我逐渐的意识到了，前端如果抽象一点来看的话，算法和逻辑所构成。或许，你不会马上认同这个观点，但你仔细想一想可能会有新的感受。</p>
 </blockquote>
 
 <h2 id="举个栗子">举个栗子</h2>
@@ -96,10 +114,10 @@ nav{
 
 <h3 id="前端-or-后端">前端 or 后端？</h3>
 <blockquote>
-  <p>   在互联网上，我们时常会听到一个词叫“跨界”。我们反过来想一下，界，是为了什么？我现在看这个问题，觉得提到这个“界”，好像是给自己画圈圈一样。既然孙悟空已经那么厉害了，为什么它缺逃不出如来的手掌心的呢？</p>
+  <p>   在互联网上，我们时常会听到一个词叫“跨界”。我们反过来想一下，界，是为了什么？我现在看这个问题，觉得提到这个“界”，好像是给自己画圈圈一样。既然孙悟空已经那么厉害了，为什么它却逃不出如来的手掌心的呢？</p>
   <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>尼采曾经说过——“我们的眼睛就是我们的监狱,而目光所及之处就是监狱的围墙。”  
 </code></pre></div>  </div>
-  <p>  我现在，看前端或者后端，其实一个名象罢了，回归本质是要把事情做好而已。试着把自己目光再放宽一点，让我们的视野更大，才能看到更美丽的风景。</p>
+  <p>  我现在，看前端或者后端，其实一个名象罢了，回归本质是要把事情做好而已。试着把自己目光再放宽一点，让我们的视野更大，才可能看到更美丽的风景。</p>
 </blockquote>
 
 

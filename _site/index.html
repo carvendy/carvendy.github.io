@@ -31,10 +31,11 @@ nav{
 }
 
 .page-header h1,.page-header h2{
-  color: black;
+  color:#fff;
 }
 
-.threeD{ color:#fff; 
+.threeD{ 
+   color:#fff; 
    text-shadow: 0 0 1px #999, 
               1px 1px 2px #888, 
               2px 2px 2px #777, 
@@ -43,13 +44,30 @@ nav{
               5px 5px 2px #333;
 }
 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+
+.hello-h{
+    margin: 0 auto;
+    width: 16.5em;
+    width: 26ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(30, end),
+        cursor-blink 0.3s step-end infinite alternate;
+}
+
 </style>
 
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name threeD" >Welcome to Carvendy's Zone</h1>
+      <h1 class="project-name threeD hello-h" >Welcome to Carvendy's Zone</h1>
       <h2 >Study&emsp;&&emsp;Think&emsp;&&emsp;communicate</h2>  
     </header>
 
