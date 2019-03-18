@@ -2911,6 +2911,9 @@ function renderComments(_ref2, instance) {
       initButton.innerText = '初始化评论';
       initHint.appendChild(initButton);
       errorBlock.appendChild(initHint);
+      initButton.onload = function(){
+          console.log('initButton...');
+      }
     } else {
       errorBlock.innerText = error;
     }
